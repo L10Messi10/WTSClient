@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WTSClient.Android", "WTSClient\WTSClient.Android\WTSClient.Android.csproj", "{5DBAE948-C9D4-4942-8AD0-A9BD75E3D864}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WTSClient", "WTSClient\WTSClient\WTSClient.csproj", "{A15E8DBF-4D63-4475-B41B-064515406B63}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5DBAE948-C9D4-4942-8AD0-A9BD75E3D864}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DBAE948-C9D4-4942-8AD0-A9BD75E3D864}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DBAE948-C9D4-4942-8AD0-A9BD75E3D864}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5DBAE948-C9D4-4942-8AD0-A9BD75E3D864}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DBAE948-C9D4-4942-8AD0-A9BD75E3D864}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DBAE948-C9D4-4942-8AD0-A9BD75E3D864}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{A15E8DBF-4D63-4475-B41B-064515406B63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A15E8DBF-4D63-4475-B41B-064515406B63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A15E8DBF-4D63-4475-B41B-064515406B63}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A15E8DBF-4D63-4475-B41B-064515406B63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A15E8DBF-4D63-4475-B41B-064515406B63}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A15E8DBF-4D63-4475-B41B-064515406B63}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {106A79B8-D1DE-42D1-906A-F992453BADE8}
+	EndGlobalSection
+EndGlobal
