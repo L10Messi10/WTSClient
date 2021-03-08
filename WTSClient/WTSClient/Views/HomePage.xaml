@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Home"
+             x:Class="WTSClient.Views.HomePage">
+    <ContentPage.Content>
+        <Grid RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20" />
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="20" />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Label Text="Current Billing" FontAttributes="Bold" HorizontalOptions="Center"/>
+            <Grid Grid.Row="1" RowSpacing="0" Margin="10" >
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <StackLayout Grid.Column="0" Orientation="Vertical" Spacing="0">
+                    <Frame Padding="10" VerticalOptions="FillAndExpand">
+                        <StackLayout>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="R. Id: " />
+                                <Label Text="*******" HorizontalOptions="EndAndExpand" />
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Prev. Rd.: " />
+                                <Label Text="*******" HorizontalOptions="EndAndExpand" />
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Curr. Rd.: " />
+                                <Label Text="*******" HorizontalOptions="EndAndExpand" />
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Cnspmtn: " />
+                                <Label Text="*******" HorizontalOptions="EndAndExpand" />
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="Charge:" />
+                                <Label Text="*******" HorizontalOptions="EndAndExpand" />
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+
+                </StackLayout>
+                <StackLayout Grid.Column="1" Margin="0">
+                    <Frame Padding="10" VerticalOptions="FillAndExpand">
+                        <StackLayout>
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="From: " />
+                                <Label Text="*******" HorizontalOptions="EndAndExpand" />
+                            </StackLayout>
+
+                            <StackLayout Orientation="Horizontal">
+                                <Label Text="To: " />
+                                <Label Text="*******" HorizontalOptions="EndAndExpand" />
+                            </StackLayout>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </Grid>
+            <StackLayout Grid.Row="2" Margin="0,0,10,0" VerticalOptions="EndAndExpand">
+                <Button Text="Details" TextTransform="None" BackgroundColor="WhiteSmoke"
+                        TextColor="Black" VerticalOptions="EndAndExpand"
+                        CornerRadius="15" HorizontalOptions="EndAndExpand" />
+            </StackLayout>
+            <BoxView Grid.Row="3" HeightRequest="1" Margin="20,10,20,0" BackgroundColor="Gray"/>
+            <Label Grid.Row="4" Text="Previous Billings" FontAttributes="Bold" HorizontalOptions="Center"/>
+            <CollectionView Grid.Row="5">
+
+            </CollectionView>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
