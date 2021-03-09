@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WTSClient.Views.DetailsPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <StackLayout Orientation="Horizontal">
+                    <Label Text="R.Id:" />
+                    <Label Text="*****" HorizontalOptions="EndAndExpand" />
+                </StackLayout>
+            </Grid>
+            <Button VerticalOptions="EndAndExpand" Text="Close" TextColor="{StaticResource TextColor}"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

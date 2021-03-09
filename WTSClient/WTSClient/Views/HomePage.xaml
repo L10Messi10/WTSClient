@@ -13,66 +13,68 @@
                 <RowDefinition Height="20" />
                 <RowDefinition />
             </Grid.RowDefinitions>
-            <Label Text="Current Billing" FontAttributes="Bold" HorizontalOptions="Center"/>
+            <Label Text="Current Billing" FontAttributes="Bold" TextColor="{StaticResource Primary_Dark}" HorizontalOptions="Center"/>
             <Grid Grid.Row="1" RowSpacing="0" Margin="10" >
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
                 <StackLayout Grid.Column="0" Orientation="Vertical" Spacing="0">
-                    <Frame Padding="10" VerticalOptions="FillAndExpand">
+                    <Frame Padding="10" BackgroundColor="{StaticResource Primary_Soft_Light}" 
+                           CornerRadius="10" VerticalOptions="FillAndExpand">
                         <StackLayout>
                             <StackLayout Orientation="Horizontal">
-                                <Label Text="R. Id: " />
-                                <Label Text="*******" HorizontalOptions="EndAndExpand" />
+                                <Label Text="R. Id: " TextColor="{StaticResource TextColor}"/>
+                                <Label Text="*******" HorizontalOptions="EndAndExpand" TextColor="{StaticResource TextColor}"/>
                             </StackLayout>
 
                             <StackLayout Orientation="Horizontal">
-                                <Label Text="Prev. Rd.: " />
-                                <Label Text="*******" HorizontalOptions="EndAndExpand" />
+                                <Label Text="Prev. Rd.: " TextColor="{StaticResource TextColor}"/>
+                                <Label Text="*******" HorizontalOptions="EndAndExpand" TextColor="{StaticResource TextColor}"/>
                             </StackLayout>
 
                             <StackLayout Orientation="Horizontal">
-                                <Label Text="Curr. Rd.: " />
-                                <Label Text="*******" HorizontalOptions="EndAndExpand" />
+                                <Label Text="Curr. Rd.: " TextColor="{StaticResource TextColor}"/>
+                                <Label Text="*******" HorizontalOptions="EndAndExpand" TextColor="{StaticResource TextColor}"/>
                             </StackLayout>
 
                             <StackLayout Orientation="Horizontal">
-                                <Label Text="Cnspmtn: " />
-                                <Label Text="*******" HorizontalOptions="EndAndExpand" />
+                                <Label Text="Cnspmtn: " TextColor="{StaticResource TextColor}"/>
+                                <Label Text="*******" HorizontalOptions="EndAndExpand" TextColor="{StaticResource TextColor}"/>
                             </StackLayout>
 
                             <StackLayout Orientation="Horizontal">
-                                <Label Text="Charge:" />
-                                <Label Text="*******" HorizontalOptions="EndAndExpand" />
+                                <Label Text="Charge:" TextColor="{StaticResource TextColor}"/>
+                                <Label Text="*******" HorizontalOptions="EndAndExpand" TextColor="{StaticResource TextColor}"/>
                             </StackLayout>
                         </StackLayout>
                     </Frame>
 
                 </StackLayout>
                 <StackLayout Grid.Column="1" Margin="0">
-                    <Frame Padding="10" VerticalOptions="FillAndExpand">
+                    <Frame Padding="10" BackgroundColor="{StaticResource Primary_Soft_Light}" 
+                           CornerRadius="10" VerticalOptions="FillAndExpand">
                         <StackLayout>
                             <StackLayout Orientation="Horizontal">
-                                <Label Text="From: " />
-                                <Label Text="*******" HorizontalOptions="EndAndExpand" />
+                                <Label Text="From: " TextColor="{StaticResource TextColor}" />
+                                <Label Text="*******" TextColor="{StaticResource TextColor}" HorizontalOptions="EndAndExpand" />
                             </StackLayout>
 
                             <StackLayout Orientation="Horizontal">
-                                <Label Text="To: " />
-                                <Label Text="*******" HorizontalOptions="EndAndExpand" />
+                                <Label Text="To: " TextColor="{StaticResource TextColor}"/>
+                                <Label Text="*******" TextColor="{StaticResource TextColor}" HorizontalOptions="EndAndExpand" />
                             </StackLayout>
                         </StackLayout>
                     </Frame>
                 </StackLayout>
             </Grid>
             <StackLayout Grid.Row="2" Margin="0,0,10,0" VerticalOptions="EndAndExpand">
-                <Button Text="Details" TextTransform="None" BackgroundColor="WhiteSmoke"
-                        TextColor="Black" VerticalOptions="EndAndExpand"
-                        CornerRadius="15" HorizontalOptions="EndAndExpand" />
+                <Button x:Name="btndetails" Text="Details" TextTransform="None" BackgroundColor="{StaticResource Primary_Dark}"
+                        TextColor="{StaticResource TextColor}" VerticalOptions="EndAndExpand"
+                        CornerRadius="15" HorizontalOptions="EndAndExpand" Clicked="Btndetails_OnClicked" />
             </StackLayout>
             <BoxView Grid.Row="3" HeightRequest="1" Margin="20,10,20,0" BackgroundColor="Gray"/>
-            <Label Grid.Row="4" Text="Previous Billings" FontAttributes="Bold" HorizontalOptions="Center"/>
+            <Label Grid.Row="4" Text="Previous Billings" TextColor="{StaticResource Primary_Dark}" FontAttributes="Bold" HorizontalOptions="Center"/>
             <CollectionView Grid.Row="5">
 
             </CollectionView>
