@@ -3,6 +3,7 @@
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
        xmlns:local="clr-namespace:WTSClient.Views"
        Title="WTSClient"
+       BackgroundColor="{StaticResource Primary_Soft_Light}"
        x:Class="WTSClient.AppShell">
 
     <!--
@@ -81,6 +82,9 @@
     -->
     <FlyoutItem Title="Home" Icon="home.png">
         <ShellContent Route="HomePage" ContentTemplate="{DataTemplate local:HomePage}" />
+    </FlyoutItem>
+    <FlyoutItem Title="Profile" Icon="user.png">
+        <ShellContent Route="ProfilePage" ContentTemplate="{DataTemplate local:ProfilePage}" />
     </FlyoutItem>
     <FlyoutItem Title="About" Icon="icon_about.png">
         <ShellContent Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />

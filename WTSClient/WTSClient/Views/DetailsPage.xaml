@@ -3,19 +3,41 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="WTSClient.Views.DetailsPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Grid>
+        <StackLayout Spacing="0">
+            <Grid VerticalOptions="Start" RowSpacing="0">
                 <Grid.RowDefinitions>
                     <RowDefinition />
                     <RowDefinition />
-                    <RowDefinition />
                 </Grid.RowDefinitions>
-                <StackLayout Orientation="Horizontal">
-                    <Label Text="R.Id:" />
-                    <Label Text="*****" HorizontalOptions="EndAndExpand" />
-                </StackLayout>
+                <Frame Margin="20" CornerRadius="10">
+                    <StackLayout Orientation="Vertical">
+                        <Label Text="Lionel Segotier" FontSize="20" TextColor="{StaticResource TextColorBlack}" FontAttributes="Bold"/>
+                        <StackLayout Margin="0,8,0,0">
+                            <Label Text="Caimito" FontSize="15" />
+                            <Label Text="Regular Consumer" FontSize="15" />
+                            <Label Text="Commercial" FontSize="15" />
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
+                <Frame Grid.Row="1" Margin="20,0,20,0" CornerRadius="10" BackgroundColor="{StaticResource Primary_Soft_Light}">
+                    <StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="R.Id:" TextColor="{StaticResource TextColorBlack}" FontSize="15" FontAttributes="Bold"/>
+                            <Label Text="*****" HorizontalOptions="EndAndExpand" 
+                                   FontAttributes="Bold" TextColor="{StaticResource TextColorBlack}" FontSize="15"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="R.Id:" TextColor="{StaticResource TextColorBlack}" FontAttributes="Bold" FontSize="15"/>
+                            <Label Text="*****" HorizontalOptions="EndAndExpand" TextColor="{StaticResource TextColorBlack}" 
+                                   FontSize="15"
+                                   FontAttributes="Bold"/>
+                        </StackLayout>
+                    </StackLayout>
+                </Frame>
             </Grid>
-            <Button VerticalOptions="EndAndExpand" Text="Close" TextColor="{StaticResource TextColor}"/>
+            <Button VerticalOptions="EndAndExpand" 
+                    Text="Close" TextTransform="None"
+                    Clicked="Button_OnClicked" TextColor="{StaticResource TextColor}"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

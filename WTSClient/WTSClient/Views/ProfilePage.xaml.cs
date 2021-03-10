@@ -10,16 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace WTSClient.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class DetailsPage : ContentPage
+    public partial class ProfilePage : ContentPage
     {
-        public DetailsPage()
+        public ProfilePage()
         {
             InitializeComponent();
-        }
-
-        private async void Button_OnClicked(object sender, EventArgs e)
-        {
-            await Navigation.PopModalAsync();
         }
     }
 }
