@@ -11,24 +11,24 @@
                 </Grid.RowDefinitions>
                 <Frame Margin="20" CornerRadius="10">
                     <StackLayout Orientation="Vertical">
-                        <Label Text="Lionel Segotier" FontSize="20" TextColor="{StaticResource TextColorBlack}" FontAttributes="Bold"/>
+                        <Label Text="Lionel Segotier" FontSize="20" TextColor="{StaticResource Primary_Dark}" FontAttributes="Bold"/>
                         <StackLayout Margin="0,8,0,0">
-                            <Label Text="Caimito" FontSize="15" />
-                            <Label Text="Regular Consumer" FontSize="15" />
-                            <Label Text="Commercial" FontSize="15" />
+                            <Label Text="Caimito" FontSize="15" TextColor="{StaticResource Primary_Light}"/>
+                            <Label Text="Regular Consumer" FontSize="15" TextColor="{StaticResource Primary_Light}"/>
+                            <Label Text="Commercial" FontSize="15" TextColor="{StaticResource Primary_Light}"/>
                         </StackLayout>
                     </StackLayout>
                 </Frame>
                 <Frame Grid.Row="1" Margin="20,0,20,0" CornerRadius="10" BackgroundColor="{StaticResource Primary_Soft_Light}">
                     <StackLayout>
                         <StackLayout Orientation="Horizontal">
-                            <Label Text="R.Id:" TextColor="{StaticResource TextColorBlack}" FontSize="15" FontAttributes="Bold"/>
+                            <Label Text="R.Id:" TextColor="{StaticResource TextColor}" FontSize="15" FontAttributes="Bold"/>
                             <Label Text="*****" HorizontalOptions="EndAndExpand" 
-                                   FontAttributes="Bold" TextColor="{StaticResource TextColorBlack}" FontSize="15"/>
+                                   FontAttributes="Bold" TextColor="{StaticResource TextColor}" FontSize="15"/>
                         </StackLayout>
                         <StackLayout Orientation="Horizontal">
-                            <Label Text="R.Id:" TextColor="{StaticResource TextColorBlack}" FontAttributes="Bold" FontSize="15"/>
-                            <Label Text="*****" HorizontalOptions="EndAndExpand" TextColor="{StaticResource TextColorBlack}" 
+                            <Label Text="R.Id:" TextColor="{StaticResource TextColor}" FontAttributes="Bold" FontSize="15"/>
+                            <Label Text="*****" HorizontalOptions="EndAndExpand" TextColor="{StaticResource TextColor}" 
                                    FontSize="15"
                                    FontAttributes="Bold"/>
                         </StackLayout>

@@ -55,7 +55,6 @@
                     </VisualStateGroupList>
                 </Setter>
             </Style>
-
             <!--
             Custom Style you can apply to any Flyout Item
             -->
