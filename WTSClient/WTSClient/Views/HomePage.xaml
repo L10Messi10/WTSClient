@@ -19,53 +19,12 @@
                     <ColumnDefinition/>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <StackLayout Grid.Column="0" Orientation="Vertical" Spacing="0">
+                <StackLayout Orientation="Vertical" Grid.ColumnSpan="2" HorizontalOptions="FillAndExpand" Spacing="0">
                     <Frame Padding="10" BackgroundColor="{StaticResource Primary_Soft_Light}" 
                            CornerRadius="10" VerticalOptions="FillAndExpand">
-                        <StackLayout>
-                            <StackLayout Orientation="Horizontal">
-                                <Label Text="R. Id: " TextColor="{StaticResource TextColor}"/>
-                                <Label Text="*******" HorizontalOptions="EndAndExpand" TextColor="{StaticResource TextColor}"/>
-                            </StackLayout>
-
-                            <StackLayout Orientation="Horizontal">
-                                <Label Text="Prev. Rd.: " TextColor="{StaticResource TextColor}"/>
-                                <Label Text="*******" HorizontalOptions="EndAndExpand" TextColor="{StaticResource TextColor}"/>
-                            </StackLayout>
-
-                            <StackLayout Orientation="Horizontal">
-                                <Label Text="Curr. Rd.: " TextColor="{StaticResource TextColor}"/>
-                                <Label Text="*******" HorizontalOptions="EndAndExpand" TextColor="{StaticResource TextColor}"/>
-                            </StackLayout>
-
-                            <StackLayout Orientation="Horizontal">
-                                <Label Text="Cnspmtn: " TextColor="{StaticResource TextColor}"/>
-                                <Label Text="*******" HorizontalOptions="EndAndExpand" TextColor="{StaticResource TextColor}"/>
-                            </StackLayout>
-
-                            <StackLayout Orientation="Horizontal">
-                                <Label Text="Charge:" TextColor="{StaticResource TextColor}"/>
-                                <Label Text="*******" HorizontalOptions="EndAndExpand" TextColor="{StaticResource TextColor}"/>
-                            </StackLayout>
-                        </StackLayout>
+                        
                     </Frame>
 
-                </StackLayout>
-                <StackLayout Grid.Column="1" Margin="0">
-                    <Frame Padding="10" BackgroundColor="{StaticResource Primary_Soft_Light}" 
-                           CornerRadius="10" VerticalOptions="FillAndExpand">
-                        <StackLayout>
-                            <StackLayout Orientation="Horizontal">
-                                <Label Text="From: " TextColor="{StaticResource TextColor}" />
-                                <Label Text="*******" TextColor="{StaticResource TextColor}" HorizontalOptions="EndAndExpand" />
-                            </StackLayout>
-
-                            <StackLayout Orientation="Horizontal">
-                                <Label Text="To: " TextColor="{StaticResource TextColor}"/>
-                                <Label Text="*******" TextColor="{StaticResource TextColor}" HorizontalOptions="EndAndExpand" />
-                            </StackLayout>
-                        </StackLayout>
-                    </Frame>
                 </StackLayout>
             </Grid>
             <StackLayout Grid.Row="2" Margin="0,0,10,0" VerticalOptions="EndAndExpand">
