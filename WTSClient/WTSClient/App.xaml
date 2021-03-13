@@ -12,6 +12,8 @@
             <Color x:Key="Primary_Soft_Light">#008891</Color>
             <Color x:Key="TextColor">#e7e7de</Color>
             <Color x:Key="TextColorBlack">Black</Color>
+            <Color x:Key="FrameBackground">#F4EFCF</Color>
+            <Color x:Key="PriceColor">#0EB206</Color>
             <Style TargetType="Button">
                 <Setter Property="TextColor" Value="White"></Setter>
                 <Setter Property="VisualStateManager.VisualStateGroups">

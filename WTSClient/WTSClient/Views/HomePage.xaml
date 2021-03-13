@@ -2,41 +2,59 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              Title="Home"
+             Padding="0"
+             xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
              x:Class="WTSClient.Views.HomePage">
-    <ContentPage.Content>
-        <Grid RowSpacing="0">
+    <ScrollView>
+        <Grid RowSpacing="0" Padding="0" Margin="0" >
             <Grid.RowDefinitions>
-                <RowDefinition Height="20" />
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="50"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="20" />
-                <RowDefinition />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
-            <Label Text="Current Billing" FontAttributes="Bold" TextColor="{StaticResource Primary_Dark}" HorizontalOptions="Center"/>
-            <Grid Grid.Row="1" RowSpacing="0" Margin="10" >
+            <StackLayout Margin="30,20,30,0" VerticalOptions="FillAndExpand">
+                <Label Text="Datu Abdul Dadia Water and Sanitation Cooperative" HorizontalTextAlignment="Center"
+                           FontAttributes="Bold" TextColor="{StaticResource Primary_Dark}"
+                           FontSize="20" HorizontalOptions="CenterAndExpand"/>
+                <Label Text="Prk. Negara Brgy. Datu Abdul dadia, Panabo City Davao del Norte"
+                           FontSize="10" HorizontalOptions="CenterAndExpand"/>
+            </StackLayout>
+            <Grid Grid.Row="1" RowSpacing="0" Margin="30,10,30,0" VerticalOptions="FillAndExpand">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
                 </Grid.ColumnDefinitions>
-                <StackLayout Orientation="Vertical" Grid.ColumnSpan="2" HorizontalOptions="FillAndExpand" Spacing="0">
-                    <Frame Padding="10" BackgroundColor="{StaticResource Primary_Soft_Light}" 
-                           CornerRadius="10" VerticalOptions="FillAndExpand">
-                        
-                    </Frame>
+                <StackLayout Orientation="Vertical" Grid.ColumnSpan="2" HorizontalOptions="FillAndExpand"
+                                 Spacing="0">
+                    <Frame Padding="0" BackgroundColor="{StaticResource FrameBackground}"
+                               CornerRadius="10" VerticalOptions="FillAndExpand" IsClippedToBounds="True">
+                        <StackLayout>
+                            <AbsoluteLayout>
+                                <ff:CachedImage Source="bg" AbsoluteLayout.LayoutBounds="0,0,1,1"
+                                                    AbsoluteLayout.LayoutFlags="All"
+                                                    HeightRequest="200" Aspect="AspectFill" />
+                                <ff:CachedImage Source="circlewater" AbsoluteLayout.LayoutBounds="0,0,1,1"
+                                                    AbsoluteLayout.LayoutFlags="All" />
+                            </AbsoluteLayout>
+                            <StackLayout Margin="0,20,0,10">
+                                <Label Text="My Current Balance" TextColor="{StaticResource TextColorBlack}"
+                                           HorizontalOptions="CenterAndExpand" FontSize="15" FontAttributes="Bold" />
+                                <StackLayout>
+                                    <Label Text="16 m³" HorizontalOptions="CenterAndExpand" />
+                                    <Label Text="As of April 2021" FontSize="12"
+                                               HorizontalOptions="CenterAndExpand"
+                                               Margin="0,20,0,20" />
+                                    <Label Text="₱ 802.50" FontSize="30" HorizontalOptions="CenterAndExpand"
+                                               TextColor="{StaticResource PriceColor}"
+                                               FontAttributes="Bold" />
+                                    <Button Text="More Details >>" TextTransform="None" Margin="0,20,20,0"
+                                                CornerRadius="5" Clicked="Btndetails_OnClicked" HorizontalOptions="EndAndExpand" />
+                                </StackLayout>
+                            </StackLayout>
 
+                        </StackLayout>
+                    </Frame>
                 </StackLayout>
             </Grid>
-            <StackLayout Grid.Row="2" Margin="0,0,10,0" VerticalOptions="EndAndExpand">
-                <Button x:Name="btndetails" Text="Details" TextTransform="None" BackgroundColor="{StaticResource Primary_Dark}"
-                        TextColor="{StaticResource TextColor}" VerticalOptions="EndAndExpand"
-                        CornerRadius="15" HorizontalOptions="EndAndExpand" Clicked="Btndetails_OnClicked" />
-            </StackLayout>
-            <BoxView Grid.Row="3" HeightRequest="1" Margin="20,10,20,0" BackgroundColor="Gray"/>
-            <Label Grid.Row="4" Text="Previous Billings" TextColor="{StaticResource Primary_Dark}" FontAttributes="Bold" HorizontalOptions="Center"/>
-            <CollectionView Grid.Row="5">
-
-            </CollectionView>
         </Grid>
-    </ContentPage.Content>
+    </ScrollView>
 </ContentPage>
