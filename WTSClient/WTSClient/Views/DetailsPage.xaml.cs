@@ -16,8 +16,12 @@ namespace WTSClient.Views
         {
             InitializeComponent();
         }
+        private async void BtnClose_OnClicked(object sender, EventArgs e)
+        {
+            await Navigation.PopModalAsync();
+        }
 
-        private async void Button_OnClicked(object sender, EventArgs e)
+        private async void TapGestureRecognizer_OnTapped(object sender, EventArgs e)
         {
             await Navigation.PopModalAsync();
         }

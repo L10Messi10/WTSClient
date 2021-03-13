@@ -18177,7 +18177,10 @@ namespace WTSClient.Droid
 			public const int user = 2131165336;
 			
 			// aapt resource value: 0x7F070099
-			public const int xamarin_logo = 2131165337;
+			public const int watermeter = 2131165337;
+			
+			// aapt resource value: 0x7F07009A
+			public const int xamarin_logo = 2131165338;
 			
 			static Drawable()
 			{
