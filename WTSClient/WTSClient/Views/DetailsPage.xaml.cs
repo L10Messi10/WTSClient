@@ -25,5 +25,10 @@ namespace WTSClient.Views
         {
             await Navigation.PopModalAsync();
         }
+
+        private async void BtnLearn_OnClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushModalAsync(new LearnPage());
+        }
     }
 }
