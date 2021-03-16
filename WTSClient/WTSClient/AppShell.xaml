@@ -2,6 +2,8 @@
 <Shell xmlns="http://xamarin.com/schemas/2014/forms" 
        xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
        xmlns:local="clr-namespace:WTSClient.Views"
+       xmlns:pancakeView="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+       xmlns:forms="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
        Title="WTSClient"
        BackgroundColor="{StaticResource Primary_Soft_Light}"
        x:Class="WTSClient.AppShell">
@@ -20,7 +22,7 @@
                 <Setter Property="Shell.TitleColor" Value="White" />
                 <Setter Property="Shell.DisabledColor" Value="#B4FFFFFF" />
                 <Setter Property="Shell.UnselectedColor" Value="#95FFFFFF" />
-                <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource Primary_Dark}" />
+                <Setter Property="Shell.TabBarBackgroundColor" Value="{StaticResource TextSoftColor}" />
                 <Setter Property="Shell.TabBarForegroundColor" Value="White"/>
                 <Setter Property="Shell.TabBarUnselectedColor" Value="#95FFFFFF"/>
                 <Setter Property="Shell.TabBarTitleColor" Value="White"/>
@@ -33,7 +35,7 @@
             https://docs.microsoft.com/xamarin/xamarin-forms/app-fundamentals/shell/flyout#flyoutitem-and-menuitem-style-classes
             -->
             <Style Class="FlyoutItemLabelStyle" TargetType="Label">
-                <Setter Property="TextColor" Value="White"></Setter>
+                <Setter Property="TextColor" Value="{StaticResource Primary_Dark}"></Setter>
             </Style>
             <Style Class="FlyoutItemLayoutStyle" TargetType="Layout" ApplyToDerivedTypes="True">
                 <Setter Property="BackgroundColor" Value="LightBlue"></Setter>
@@ -48,7 +50,7 @@
                             </VisualState>
                             <VisualState x:Name="Selected">
                                 <VisualState.Setters>
-                                    <Setter Property="BackgroundColor" Value="{StaticResource Primary_Dark}" />
+                                    <Setter Property="BackgroundColor" Value="{StaticResource TextSoftColor}" />
                                 </VisualState.Setters>
                             </VisualState>
                         </VisualStateGroup>
@@ -73,7 +75,34 @@
             </Style>
         </ResourceDictionary>
     </Shell.Resources>
+    <Shell.FlyoutHeaderTemplate>
+        <DataTemplate>
+            <pancakeView:PancakeView
+                HorizontalOptions="FillAndExpand"
+                IsClippedToBounds="true"
+                VerticalOptions="FillAndExpand">
+                <AbsoluteLayout>
+                    <!--<forms:CachedImage Source="bg" AbsoluteLayout.LayoutBounds="0,0,1,1"
+                                    AbsoluteLayout.LayoutFlags="All"
+                                    HeightRequest="150" Aspect="AspectFill" />-->
+                    <StackLayout Margin="0,0,0,0" Padding="25" AbsoluteLayout.LayoutBounds="0,0,1,1"
+                                 AbsoluteLayout.LayoutFlags="All" Spacing="0"
+                                 BackgroundColor="{StaticResource Primary_Dark}">
+                        <Label
+                            Margin="0,0,0,0"
+                            FontSize="19" FontAttributes="Bold"
+                            HorizontalOptions="CenterAndExpand"
+                            Text="Datu Abdul Water and Sanitation Cooperative"
+                            TextColor="White"
+                            HorizontalTextAlignment="Center"
+                            VerticalOptions="StartAndExpand" />
+                        <forms:CachedImage Source="water_100" Margin="0,10,0,10" HeightRequest="50" HorizontalOptions="CenterAndExpand"/>
+                    </StackLayout>
+                </AbsoluteLayout>
+            </pancakeView:PancakeView>
 
+        </DataTemplate>
+    </Shell.FlyoutHeaderTemplate>
     <!-- 
         When the Flyout is visible this defines the content to display in the flyout.
         FlyoutDisplayOptions="AsMultipleItems" will create a separate flyout item for each child element    
@@ -85,16 +114,16 @@
     <FlyoutItem Title="Profile" Icon="user.png">
         <ShellContent Route="ProfilePage" ContentTemplate="{DataTemplate local:ProfilePage}" />
     </FlyoutItem>
-    <FlyoutItem Title="About" Icon="icon_about.png">
+    <FlyoutItem Title="About" Icon="about.png">
         <ShellContent Route="AboutPage" ContentTemplate="{DataTemplate local:AboutPage}" />
     </FlyoutItem>
-    <FlyoutItem Title="Browse" Icon="icon_feed.png">
+    <FlyoutItem Title="Browse" Icon="list.png">
         <ShellContent Route="ItemsPage" ContentTemplate="{DataTemplate local:ItemsPage}" />
     </FlyoutItem>
     
 
     <!-- When the Flyout is visible this will be a menu item you can tie a click behavior to  -->
-    <MenuItem Text="Logout" StyleClass="MenuItemLayoutStyle" Clicked="OnMenuItemClicked">
+    <MenuItem IconImageSource="logout" Text="Logout" StyleClass="MenuItemLayoutStyle" Clicked="OnMenuItemClicked">
     </MenuItem>
 
     <!--

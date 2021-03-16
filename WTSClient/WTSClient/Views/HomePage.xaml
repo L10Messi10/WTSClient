@@ -29,9 +29,12 @@
                                CornerRadius="10" VerticalOptions="FillAndExpand" IsClippedToBounds="True">
                         <StackLayout>
                             <AbsoluteLayout>
-                                <ff:CachedImage Source="bg" AbsoluteLayout.LayoutBounds="0,0,1,1"
+                                <!--<ff:CachedImage Source="bg" AbsoluteLayout.LayoutBounds="0,0,1,1"
                                                     AbsoluteLayout.LayoutFlags="All"
-                                                    HeightRequest="200" Aspect="AspectFill" />
+                                                    HeightRequest="200" Aspect="AspectFill" />-->
+                                <StackLayout AbsoluteLayout.LayoutBounds="0,0,1,1"
+                                             AbsoluteLayout.LayoutFlags="All"
+                                             HeightRequest="200" BackgroundColor="{StaticResource Primary_Dark}"/>
                                 <ff:CachedImage Source="circlewater" AbsoluteLayout.LayoutBounds="0,0,1,1"
                                                     AbsoluteLayout.LayoutFlags="All" />
                             </AbsoluteLayout>
