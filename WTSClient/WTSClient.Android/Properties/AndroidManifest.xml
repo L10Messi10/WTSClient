@@ -3,4 +3,6 @@
 	<uses-sdk android:minSdkVersion="21" android:targetSdkVersion="29" />
 	<application android:label="WTSClient.Android" android:theme="@style/MainTheme"></application>
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+	<uses-permission android:name="android.permission.CLEAR_APP_USER_DATA" />
 </manifest>
