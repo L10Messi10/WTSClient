@@ -3,18 +3,61 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:forms="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
              xmlns:transformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
+             xmlns:views="http://xamarin.com/schemas/2020/toolkit"
              x:Class="WTSClient.Views.ProfilePage">
     <ContentPage.Content>
-        <Grid HorizontalOptions="FillAndExpand" WidthRequest="100">
-            <StackLayout>
-                <forms:CachedImage Source="user" HorizontalOptions="Center" WidthRequest="100"
-                                   HeightRequest="100" Aspect="AspectFill" 
-                                   DownsampleToViewSize="True" BitmapOptimizations="True">
-                    <forms:CachedImage.Transformations>
-                        <transformations:CircleTransformation BorderHexColor="#FFFFFF" BorderSize="10" />
-                    </forms:CachedImage.Transformations>
-                </forms:CachedImage>
-                <Label Text="Lionel Segotier" HorizontalOptions="CenterAndExpand" FontSize="20"/>
+        <Grid HorizontalOptions="FillAndExpand" WidthRequest="100" Margin="0,10,0,0" RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="150"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition />
+            </Grid.RowDefinitions>
+            <Frame Margin="8,0" Padding="3" CornerRadius="10">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" Spacing="15">
+                    <ImageButton Source="back" WidthRequest="30" BackgroundColor="Transparent"
+                                 HorizontalOptions="Start" VerticalOptions="CenterAndExpand" x:Name="btnclose"
+                                 Clicked="Btnclose_OnClicked"/>
+                    <Label Text="Profile" VerticalOptions="CenterAndExpand" FontSize="15" TextColor="{StaticResource Primary_Dark}"/>
+                </StackLayout>
+            </Frame>
+            <StackLayout Grid.Row="1" Margin="5" BackgroundColor="{StaticResource Primary_Dark}">
+                <StackLayout VerticalOptions="CenterAndExpand">
+                    <Label Text="Lionel Segotier" HorizontalOptions="CenterAndExpand"
+                           TextColor="{StaticResource TextColor}"
+                           VerticalOptions="Center" FontSize="30" />
+                    <Label Text="Prk. Caimito Brgy. Datu Abdul Panabo City" HorizontalOptions="CenterAndExpand"
+                           TextColor="{StaticResource TextColor}"
+                           VerticalOptions="Center" FontSize="15" />
+                </StackLayout>
+            </StackLayout>
+            <Frame Grid.Row="2" WidthRequest="150" Margin="0,-30,0,30" HorizontalOptions="Center" CornerRadius="8">
+                <Label Text="Balance" HorizontalOptions="CenterAndExpand"
+                       TextColor="{StaticResource PriceColor}"
+                       VerticalOptions="CenterAndExpand" FontSize="25" />
+            </Frame>
+            <StackLayout Grid.Row="3" HorizontalOptions="FillAndExpand" Margin="10">
+                <Label Text="Account summary"/>
+                <views:Expander>
+                    <views:Expander.Header>
+                        <Label Text="Baboon"
+                               FontAttributes="Bold"
+                               FontSize="Medium" />
+                    </views:Expander.Header>
+                    <Grid Padding="10">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Image Source="http://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Papio_anubis_%28Serengeti%2C_2009%29.jpg/200px-Papio_anubis_%28Serengeti%2C_2009%29.jpg"
+                               Aspect="AspectFill"
+                               HeightRequest="120"
+                               WidthRequest="120" />
+                        <Label Grid.Column="1"
+                               Text="Baboons are African and Arabian Old World monkeys belonging to the genus Papio, part of the subfamily Cercopithecinae."
+                               FontAttributes="Italic" />
+                    </Grid>
+                </views:Expander>
             </StackLayout>
         </Grid>
     </ContentPage.Content>

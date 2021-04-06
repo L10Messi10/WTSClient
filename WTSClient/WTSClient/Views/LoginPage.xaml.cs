@@ -15,7 +15,13 @@ namespace WTSClient.Views
         public LoginPage()
         {
             InitializeComponent();
-            this.BindingContext = new LoginViewModel();
+        }
+
+        private async void Button_OnClicked(object sender, EventArgs e)
+        {
+            await Xamarin.Essentials.SecureStorage.SetAsync("isLogged", "1");
+            Application.Current.MainPage = new AppShell();
+            //await Shell.Current.GoToAsync("//main");
         }
     }
 }

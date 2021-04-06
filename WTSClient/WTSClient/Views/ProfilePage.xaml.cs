@@ -16,5 +16,10 @@ namespace WTSClient.Views
         {
             InitializeComponent();
         }
+
+        private async void Btnclose_OnClicked(object sender, EventArgs e)
+        {
+            await Navigation.PopModalAsync();
+        }
     }
 }
