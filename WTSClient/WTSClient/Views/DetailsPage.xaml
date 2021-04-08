@@ -2,9 +2,23 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:forms="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+             xmlns:effects="http://xamarin.com/schemas/2020/toolkit"
              x:Class="WTSClient.Views.DetailsPage">
-    <StackLayout>
-        <ScrollView>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Frame CornerRadius="0" Padding="0">
+            <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" Spacing="15" Margin="10,0,0,0">
+                <ImageButton Source="back" WidthRequest="30" BackgroundColor="Transparent"
+                             HorizontalOptions="Start" Aspect="AspectFit" VerticalOptions="CenterAndExpand" x:Name="btnclose"
+                             Clicked="Btnclose_OnClicked"/>
+                <Label Text="Billing Details" FontAttributes="Bold" VerticalOptions="CenterAndExpand"
+                       FontSize="18" TextColor="{StaticResource Primary_Dark}"/>
+            </StackLayout>
+        </Frame>
+        <ScrollView Grid.Row="1">
             <StackLayout Padding="0" BackgroundColor="#F7F8FE" VerticalOptions="FillAndExpand">
                 <Frame Margin="20,10,20,10" CornerRadius="10" Padding="8">
                     <StackLayout>
@@ -166,7 +180,5 @@
                 </Frame>
             </StackLayout>
         </ScrollView>
-        <Button BackgroundColor="{StaticResource Primary_Dark}" VerticalOptions="EndAndExpand"
-                Text="Close" FontAttributes="Bold" Clicked="BtnClose_OnClicked" />
-    </StackLayout>
+    </Grid>
 </ContentPage>

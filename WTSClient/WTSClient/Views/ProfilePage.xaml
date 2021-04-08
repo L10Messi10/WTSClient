@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:forms="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
              xmlns:transformations="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
-             xmlns:views="http://xamarin.com/schemas/2020/toolkit"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
              xmlns:pancakeView="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
              x:Class="WTSClient.Views.ProfilePage">
     <ContentPage.Content>
@@ -13,7 +13,7 @@
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <Frame CornerRadius="10" Padding="0">
+            <Frame CornerRadius="0" Padding="0" xct:ShadowEffect.Color="Black" xct:ShadowEffect.Opacity="1" xct:ShadowEffect.OffsetY="20">
                 <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" Spacing="15" Margin="10,0,0,0">
                     <ImageButton Source="back" WidthRequest="30" BackgroundColor="Transparent"
                                  HorizontalOptions="Start" Aspect="AspectFit" VerticalOptions="CenterAndExpand" x:Name="btnclose"
@@ -48,8 +48,8 @@
                                 </Grid.ColumnDefinitions>
                                 <BoxView BackgroundColor="{StaticResource Primary_Dark}"
                                          WidthRequest="3" HorizontalOptions="Start" VerticalOptions="FillAndExpand" />
-                                <views:Expander Grid.Column="1">
-                                    <views:Expander.Header>
+                                <xct:Expander Grid.Column="1">
+                                    <xct:Expander.Header>
                                         <StackLayout>
                                             <StackLayout HorizontalOptions="StartAndExpand" Orientation="Horizontal"
                                                          Margin="10">
@@ -62,7 +62,7 @@
                                                        FontSize="Medium" TextColor="{StaticResource TextSoftColor}" />
                                             </StackLayout>
                                         </StackLayout>
-                                    </views:Expander.Header>
+                                    </xct:Expander.Header>
                                     <Grid Padding="10" HorizontalOptions="FillAndExpand">
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition Width="Auto" />
@@ -115,7 +115,7 @@
                                                    FontAttributes="Bold" TextColor="{StaticResource TextColorBlack}" />
                                         </Grid>
                                     </Grid>
-                                </views:Expander>
+                                </xct:Expander>
                             </Grid>
                         </pancakeView:PancakeView>
                         <pancakeView:PancakeView CornerRadius="5" BackgroundColor="White"
@@ -131,8 +131,8 @@
                                 </Grid.ColumnDefinitions>
                                 <BoxView BackgroundColor="{StaticResource Primary_Dark}"
                                          WidthRequest="3" HorizontalOptions="Start" VerticalOptions="FillAndExpand" />
-                                <views:Expander Grid.Column="1">
-                                    <views:Expander.Header>
+                                <xct:Expander Grid.Column="1">
+                                    <xct:Expander.Header>
                                         <StackLayout>
                                             <StackLayout HorizontalOptions="StartAndExpand" Orientation="Horizontal"
                                                          Margin="10">
@@ -145,7 +145,7 @@
                                                        FontSize="Medium" TextColor="{StaticResource TextSoftColor}"/>
                                             </StackLayout>
                                         </StackLayout>
-                                    </views:Expander.Header>
+                                    </xct:Expander.Header>
                                     <Grid Padding="10">
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition Width="Auto" />
@@ -166,7 +166,7 @@
                                         </StackLayout>
 
                                     </Grid>
-                                </views:Expander>
+                                </xct:Expander>
                             </Grid>
                         </pancakeView:PancakeView>
                     </StackLayout>

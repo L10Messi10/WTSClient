@@ -30,5 +30,10 @@ namespace WTSClient.Views
         {
             await Navigation.PushModalAsync(new LearnPage());
         }
+
+        private async void Btnclose_OnClicked(object sender, EventArgs e)
+        {
+            await Navigation.PopModalAsync();
+        }
     }
 }
