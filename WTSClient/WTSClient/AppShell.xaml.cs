@@ -40,5 +40,11 @@ namespace WTSClient
             Current.FlyoutIsPresented = false;
             await Navigation.PushModalAsync(new ProfilePage());
         }
+
+        private async void ItemStat_OnClicked(object sender, EventArgs e)
+        {
+            Current.FlyoutIsPresented = false;
+            await Navigation.PushModalAsync(new StatisticsPage());
+        }
     }
 }

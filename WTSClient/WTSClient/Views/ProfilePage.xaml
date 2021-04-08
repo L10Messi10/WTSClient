@@ -86,7 +86,7 @@
                                                    TextColor="{StaticResource TextSoftColor}" />
                                             <Label Grid.Row="1" Grid.Column="1" Text="Segotier"
                                                    FontAttributes="Bold" TextColor="{StaticResource TextColorBlack}" />
-                                            <Label Grid.Row="2" Grid.Column="0" Text="Religion: "
+                                            <Label Grid.Row="2" Grid.Column="0" Text="Middle In.: "
                                                    TextColor="{StaticResource TextSoftColor}" />
                                             <Label Grid.Row="2" Grid.Column="1" Text="R. Catholic"
                                                    FontAttributes="Bold" TextColor="{StaticResource TextColorBlack}" />
@@ -103,11 +103,11 @@
                                             </Grid.ColumnDefinitions>
                                             <Label Grid.Row="0" Grid.Column="0" Text="Birth date: "
                                                    TextColor="{StaticResource TextSoftColor}" />
-                                            <Label Grid.Row="0" Grid.Column="1" Text="Gregorio"
+                                            <Label Grid.Row="0" Grid.Column="1" Text="Feb. 10, 991"
                                                    FontAttributes="Bold" TextColor="{StaticResource TextColorBlack}" />
-                                            <Label Grid.Row="1" Grid.Column="0" Text="Last name: "
+                                            <Label Grid.Row="1" Grid.Column="0" Text="Mobile #: "
                                                    TextColor="{StaticResource TextSoftColor}" />
-                                            <Label Grid.Row="1" Grid.Column="1" Text="Segotier"
+                                            <Label Grid.Row="1" Grid.Column="1" Text="09106820966"
                                                    FontAttributes="Bold" TextColor="{StaticResource TextColorBlack}" />
                                             <Label Grid.Row="2" Grid.Column="0" Text="Religion: "
                                                    TextColor="{StaticResource TextSoftColor}" />
@@ -149,22 +149,223 @@
                                     <Grid Padding="10">
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition Width="Auto" />
-                                            <ColumnDefinition Width="Auto" />
                                         </Grid.ColumnDefinitions>
                                         <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                            </Grid.RowDefinitions>
                                             <Grid.ColumnDefinitions>
                                                 <ColumnDefinition Width="Auto" />
                                                 <ColumnDefinition Width="Auto" />
                                             </Grid.ColumnDefinitions>
-                                            <Label Grid.Column="0" Text="First name: "
+                                            <Label Grid.Row="0" Grid.Column="0" Text="Purok: "
                                                    TextColor="{StaticResource TextSoftColor}" />
-                                            <Label Grid.Column="1" Text="Gregorio"
+                                            <Label Grid.Row="0" Grid.Column="1" Text="Caimito"
+                                                   FontAttributes="Bold" TextColor="{StaticResource TextColorBlack}" />
+                                            <Label Grid.Row="1" Grid.Column="0" Text="Brgy. : "
+                                                   TextColor="{StaticResource TextSoftColor}" />
+                                            <Label Grid.Row="1" Grid.Column="1" Text="Datu Adul dadia"
+                                                   FontAttributes="Bold" TextColor="{StaticResource TextColorBlack}" />
+                                            <Label Grid.Row="2" Grid.Column="0" Text="City: "
+                                                   TextColor="{StaticResource TextSoftColor}" />
+                                            <Label Grid.Row="2" Grid.Column="1" Text="Panabo City: "
                                                    FontAttributes="Bold" TextColor="{StaticResource TextColorBlack}" />
                                         </Grid>
-                                        <StackLayout Grid.Column="1">
 
+                                    </Grid>
+                                </xct:Expander>
+                            </Grid>
+                        </pancakeView:PancakeView>
+                        <pancakeView:PancakeView CornerRadius="5" BackgroundColor="White"
+                                                 HorizontalOptions="FillAndExpand">
+                            <pancakeView:PancakeView.Shadow>
+                                <pancakeView:DropShadow Color="{StaticResource Shadow}" Offset="5,5" />
+                            </pancakeView:PancakeView.Shadow>
+                            <Grid VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand">
+
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <BoxView BackgroundColor="{StaticResource Primary_Dark}"
+                                         WidthRequest="3" HorizontalOptions="Start" VerticalOptions="FillAndExpand" />
+                                <xct:Expander Grid.Column="1">
+                                    <xct:Expander.Header>
+                                        <StackLayout>
+                                            <StackLayout HorizontalOptions="StartAndExpand" Orientation="Horizontal"
+                                                         Margin="10">
+                                                <forms:CachedImage Source="cv" WidthRequest="20" />
+                                                <BoxView Margin="0" WidthRequest="1"
+                                                         BackgroundColor="{StaticResource Primary_Dark}"
+                                                         HeightRequest="15" />
+                                                <Label Text="Additional Information" HeightRequest="20"
+                                                       FontAttributes="Bold" VerticalOptions="Center"
+                                                       FontSize="Medium" TextColor="{StaticResource TextSoftColor}"/>
+                                            </StackLayout>
                                         </StackLayout>
+                                    </xct:Expander.Header>
+                                    <Grid Padding="10">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto" />
+                                        </Grid.ColumnDefinitions>
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto" />
+                                                <ColumnDefinition Width="Auto" />
+                                            </Grid.ColumnDefinitions>
+                                            <Label Grid.Row="0" Grid.Column="0" Text="House status: "
+                                                   TextColor="{StaticResource TextSoftColor}" />
+                                            <Label Grid.Row="0" Grid.Column="1" Text="Caimito"
+                                                   FontAttributes="Bold" TextColor="{StaticResource TextColorBlack}" />
+                                            <Label Grid.Row="1" Grid.Column="0" Text="# of Dependents: "
+                                                   TextColor="{StaticResource TextSoftColor}" />
+                                            <Label Grid.Row="1" Grid.Column="1" Text="Datu Adul dadia"
+                                                   FontAttributes="Bold" TextColor="{StaticResource TextColorBlack}" />
+                                            <Label Grid.Row="2" Grid.Column="0" Text="Source of Income: "
+                                                   TextColor="{StaticResource TextSoftColor}" />
+                                            <Label Grid.Row="2" Grid.Column="1" Text="Teacher"
+                                                   FontAttributes="Bold" TextColor="{StaticResource TextColorBlack}" />
+                                            <Label Grid.Row="3" Grid.Column="0" Text="Length of Stay: "
+                                                   TextColor="{StaticResource TextSoftColor}" />
+                                            <Label Grid.Row="3" Grid.Column="1" Text="4 years"
+                                                   FontAttributes="Bold" TextColor="{StaticResource TextColorBlack}" />
+                                        </Grid>
+                                    </Grid>
+                                </xct:Expander>
+                            </Grid>
+                        </pancakeView:PancakeView>
+                        <pancakeView:PancakeView CornerRadius="5" BackgroundColor="White"
+                                                 HorizontalOptions="FillAndExpand">
+                            <pancakeView:PancakeView.Shadow>
+                                <pancakeView:DropShadow Color="{StaticResource Shadow}" Offset="5,5" />
+                            </pancakeView:PancakeView.Shadow>
+                            <Grid VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand">
 
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <BoxView BackgroundColor="{StaticResource Primary_Dark}"
+                                         WidthRequest="3" HorizontalOptions="Start" VerticalOptions="FillAndExpand" />
+                                <xct:Expander Grid.Column="1">
+                                    <xct:Expander.Header>
+                                        <StackLayout>
+                                            <StackLayout HorizontalOptions="StartAndExpand" Orientation="Horizontal"
+                                                         Margin="10">
+                                                <forms:CachedImage Source="guardian" WidthRequest="20" />
+                                                <BoxView Margin="0" WidthRequest="1"
+                                                         BackgroundColor="{StaticResource Primary_Dark}"
+                                                         HeightRequest="15" />
+                                                <Label Text="Person to be contacted in case of emergency" HeightRequest="20"
+                                                       FontAttributes="Bold" VerticalOptions="Center"
+                                                       FontSize="Medium" TextColor="{StaticResource TextSoftColor}"/>
+                                            </StackLayout>
+                                        </StackLayout>
+                                    </xct:Expander.Header>
+                                    <Grid Padding="10">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto" />
+                                        </Grid.ColumnDefinitions>
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto" />
+                                                <ColumnDefinition Width="Auto" />
+                                            </Grid.ColumnDefinitions>
+                                            <Label Grid.Row="0" Grid.Column="0" Text="Name: "
+                                                   TextColor="{StaticResource TextSoftColor}" />
+                                            <Label Grid.Row="0" Grid.Column="1" Text="Caimito"
+                                                   FontAttributes="Bold" TextColor="{StaticResource TextColorBlack}" />
+                                            <Label Grid.Row="1" Grid.Column="0" Text="Address: "
+                                                   TextColor="{StaticResource TextSoftColor}" />
+                                            <Label Grid.Row="1" Grid.Column="1" Text="Datu Adul dadia"
+                                                   FontAttributes="Bold" TextColor="{StaticResource TextColorBlack}" />
+                                            <Label Grid.Row="2" Grid.Column="0" Text="Relationship: "
+                                                   TextColor="{StaticResource TextSoftColor}" />
+                                            <Label Grid.Row="2" Grid.Column="1" Text="Teacher"
+                                                   FontAttributes="Bold" TextColor="{StaticResource TextColorBlack}" />
+                                            <Label Grid.Row="3" Grid.Column="0" Text="Contact #: "
+                                                   TextColor="{StaticResource TextSoftColor}" />
+                                            <Label Grid.Row="3" Grid.Column="1" Text="4 years"
+                                                   FontAttributes="Bold" TextColor="{StaticResource TextColorBlack}" />
+                                        </Grid>
+                                    </Grid>
+                                </xct:Expander>
+                            </Grid>
+                        </pancakeView:PancakeView>
+                        <pancakeView:PancakeView CornerRadius="5" BackgroundColor="White"
+                                                 HorizontalOptions="FillAndExpand">
+                            <pancakeView:PancakeView.Shadow>
+                                <pancakeView:DropShadow Color="{StaticResource Shadow}" Offset="5,5" />
+                            </pancakeView:PancakeView.Shadow>
+                            <Grid VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand">
+
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+                                <BoxView BackgroundColor="{StaticResource Primary_Dark}"
+                                         WidthRequest="3" HorizontalOptions="Start" VerticalOptions="FillAndExpand" />
+                                <xct:Expander Grid.Column="1">
+                                    <xct:Expander.Header>
+                                        <StackLayout>
+                                            <StackLayout HorizontalOptions="StartAndExpand" Orientation="Horizontal"
+                                                         Margin="10">
+                                                <forms:CachedImage Source="billing" WidthRequest="20" />
+                                                <BoxView Margin="0" WidthRequest="1"
+                                                         BackgroundColor="{StaticResource Primary_Dark}"
+                                                         HeightRequest="15" />
+                                                <Label Text="Billing information" HeightRequest="20"
+                                                       FontAttributes="Bold" VerticalOptions="Center"
+                                                       FontSize="Medium" TextColor="{StaticResource TextSoftColor}"/>
+                                            </StackLayout>
+                                        </StackLayout>
+                                    </xct:Expander.Header>
+                                    <Grid Padding="10">
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto" />
+                                        </Grid.ColumnDefinitions>
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                                <RowDefinition />
+                                            </Grid.RowDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto" />
+                                                <ColumnDefinition Width="Auto" />
+                                            </Grid.ColumnDefinitions>
+                                            <Label Grid.Row="0" Grid.Column="0" Text="Last payment made: "
+                                                   TextColor="{StaticResource TextSoftColor}" />
+                                            <Label Grid.Row="0" Grid.Column="1" Text="Mar. 22, 2021"
+                                                   FontAttributes="Bold" TextColor="{StaticResource TextColorBlack}" />
+                                            <Label Grid.Row="1" Grid.Column="0" Text="Present Reading: "
+                                                   TextColor="{StaticResource TextSoftColor}" />
+                                            <Label Grid.Row="1" Grid.Column="1" Text="1787"
+                                                   FontAttributes="Bold" TextColor="{StaticResource TextColorBlack}" />
+                                            <Label Grid.Row="2" Grid.Column="0" Text="Balance: "
+                                                   TextColor="{StaticResource TextSoftColor}" />
+                                            <Label Grid.Row="2" Grid.Column="1" Text="0.00"
+                                                   FontAttributes="Bold" TextColor="{StaticResource TextColorBlack}" />
+                                            <Label Grid.Row="3" Grid.Column="0" Text="Deposit: "
+                                                   TextColor="{StaticResource TextSoftColor}" />
+                                            <Label Grid.Row="3" Grid.Column="1" Text="25"
+                                                   FontAttributes="Bold" TextColor="{StaticResource TextColorBlack}" />
+                                        </Grid>
                                     </Grid>
                                 </xct:Expander>
                             </Grid>

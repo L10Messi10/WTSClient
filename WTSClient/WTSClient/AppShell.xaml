@@ -113,6 +113,8 @@
     </FlyoutItem>
     <MenuItem IconImageSource="user.png" Text="Profile" StyleClass="MenuItemLayoutStyle" x:Name="itemuser"
               Clicked="Itemuser_OnClicked"/>
+    <MenuItem IconImageSource="statistics.png" Text="Statistics" StyleClass="MenuItemLayoutStyle" x:Name="itemStat"
+              Clicked="ItemStat_OnClicked"/>
     <MenuItem IconImageSource="about.png" Text="About" StyleClass="MenuItemLayoutStyle" x:Name="itemabout"
               Clicked="Itemabout_OnClicked"/>
     <MenuItem IconImageSource="list.png" Text="Browse" StyleClass="MenuItemLayoutStyle" x:Name="itembrowse"
