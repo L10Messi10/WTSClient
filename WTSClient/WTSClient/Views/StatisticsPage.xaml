@@ -1,12 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:effects="http://xamarin.com/schemas/2020/toolkit"
+             xmlns:pancakeView="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+             xmlns:forms="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
              x:Class="WTSClient.Views.StatisticsPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <Grid HorizontalOptions="FillAndExpand" WidthRequest="100" Margin="0" RowSpacing="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Frame CornerRadius="0" Padding="0" effects:ShadowEffect.Color="Black" effects:ShadowEffect.Opacity="1" effects:ShadowEffect.OffsetY="20">
+                <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" Spacing="15" Margin="10,0,0,0">
+                    <ImageButton Source="back" WidthRequest="30" BackgroundColor="Transparent"
+                                 HorizontalOptions="Start" Aspect="AspectFit" VerticalOptions="CenterAndExpand" x:Name="btnclose"
+                                 Clicked="Btnclose_OnClicked"/>
+                    <Label Text="Profile" FontAttributes="Bold" VerticalOptions="CenterAndExpand"
+                           FontSize="18" TextColor="{StaticResource Primary_Dark}"/>
+                </StackLayout>
+            </Frame>
+            <StackLayout Grid.Row="1" Margin="0,10,0,0">
+                <StackLayout VerticalOptions="CenterAndExpand">
+                    <Label Text="Lionel Segotier" HorizontalOptions="CenterAndExpand"
+                           TextColor="{StaticResource TextColorBlack}"
+                           VerticalOptions="Center" FontSize="Large" />
+                    <Label Text="Prk. Caimito Brgy. Datu Abdul Panabo City" HorizontalOptions="CenterAndExpand"
+                           TextColor="{StaticResource TextSoftColor}"
+                           VerticalOptions="Center" FontSize="Small" />
+                </StackLayout>
+            </StackLayout>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
