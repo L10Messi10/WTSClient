@@ -17,7 +17,7 @@
                     <ImageButton Source="back" WidthRequest="30" BackgroundColor="Transparent"
                                  HorizontalOptions="Start" Aspect="AspectFit" VerticalOptions="CenterAndExpand" x:Name="btnclose"
                                  Clicked="Btnclose_OnClicked"/>
-                    <Label Text="Profile" FontAttributes="Bold" VerticalOptions="CenterAndExpand"
+                    <Label Text="Statistics" FontAttributes="Bold" VerticalOptions="CenterAndExpand"
                            FontSize="18" TextColor="{StaticResource Primary_Dark}"/>
                 </StackLayout>
             </Frame>
