@@ -20,7 +20,7 @@ namespace WTSClient
             }
             else
             {
-                MainPage = new LoginPage();
+                MainPage = new WelcomePage();
             }
         }
 

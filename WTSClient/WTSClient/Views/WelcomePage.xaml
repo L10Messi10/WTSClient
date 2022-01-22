@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" Visual="Material"
+             x:Class="WTSClient.Views.WelcomePage" BackgroundImageSource="bg">
+    <ContentPage.Content>
+        <Grid VerticalOptions="EndAndExpand" Margin="30" RowDefinitions="*, 50, 50">
+            <StackLayout Grid.Row="0" Orientation="Vertical" Spacing="0"
+                         Margin="0,0,0,20">
+                <Label Text="DADWASC Water Billing System" TextColor="{StaticResource TextColor}"
+                       FontSize="24" FontAttributes="Bold"
+                       VerticalOptions="Start" Margin="0,0,0,10"
+                       HorizontalOptions="StartAndExpand" />
+                <Label Text="This is a mobile application intended for the user of DADWASC. Monitor your bills and payments through this app." TextColor="{StaticResource TextSoftColor}"
+                       FontSize="Medium" FontAttributes="None"
+                       VerticalOptions="Start" 
+                       HorizontalOptions="StartAndExpand" />
+            </StackLayout>
+            <Button Grid.Row="1" Text="Login" HorizontalOptions="FillAndExpand" BackgroundColor="{StaticResource TextColor}"
+                    TextColor="{StaticResource Primary_Dark}" CornerRadius="8" TextTransform="None"/>
+            <Button Grid.Row="2" Text="Sign Up" HorizontalOptions="FillAndExpand" BackgroundColor="{StaticResource Primary_Dark}"
+                    BorderWidth="1" CornerRadius="8" BorderColor="{StaticResource TextColor}" TextTransform="None"
+                    TextColor="{StaticResource TextColor}"/>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
