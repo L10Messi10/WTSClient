@@ -1,6 +1,5 @@
 ﻿using Firebase.Database;
 using System;
-using WTSClient.Services;
 using WTSClient.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -13,7 +12,7 @@ namespace WTSClient
         public App()
         {
             InitializeComponent();
-            DependencyService.Register<MockDataStore>();
+           
             var isLoogged = Xamarin.Essentials.SecureStorage.GetAsync("isLogged").Result;
             if (isLoogged == "1")
             {
