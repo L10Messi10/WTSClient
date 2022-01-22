@@ -1,63 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             Title="Home"
-             Padding="0"
-             xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
              x:Class="WTSClient.Views.HomePage">
-    <ScrollView>
-        <Grid RowSpacing="0" Padding="0" Margin="0" >
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" />
-            </Grid.RowDefinitions>
-            <StackLayout Margin="30,20,30,0" VerticalOptions="FillAndExpand">
-                <Label Text="Datu Abdul Dadia Water and Sanitation Cooperative" HorizontalTextAlignment="Center"
-                           FontAttributes="Bold" TextColor="{StaticResource Primary_Dark}"
-                           FontSize="20" HorizontalOptions="CenterAndExpand"/>
-                <Label Text="Prk. Negara Brgy. Datu Abdul dadia, Panabo City Davao del Norte"
-                           FontSize="10" HorizontalOptions="CenterAndExpand"/>
-            </StackLayout>
-            <Grid Grid.Row="1" RowSpacing="0" Margin="30,10,30,0" VerticalOptions="FillAndExpand">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition />
-                    <ColumnDefinition />
-                </Grid.ColumnDefinitions>
-                <StackLayout Orientation="Vertical" Grid.ColumnSpan="2" HorizontalOptions="FillAndExpand"
-                                 Spacing="0">
-                    <Frame Padding="0" BackgroundColor="{StaticResource FrameBackground}"
-                               CornerRadius="10" VerticalOptions="FillAndExpand" IsClippedToBounds="True">
-                        <StackLayout>
-                            <AbsoluteLayout>
-                                <!--<ff:CachedImage Source="bg" AbsoluteLayout.LayoutBounds="0,0,1,1"
-                                                    AbsoluteLayout.LayoutFlags="All"
-                                                    HeightRequest="200" Aspect="AspectFill" />-->
-                                <StackLayout AbsoluteLayout.LayoutBounds="0,0,1,1"
-                                             AbsoluteLayout.LayoutFlags="All"
-                                             HeightRequest="200" BackgroundColor="{StaticResource Primary_Dark}"/>
-                                <ff:CachedImage Source="circlewater" AbsoluteLayout.LayoutBounds="0,0,1,1"
-                                                    AbsoluteLayout.LayoutFlags="All" />
-                            </AbsoluteLayout>
-                            <StackLayout Margin="0,20,0,10">
-                                <Label Text="My Current Balance" TextColor="{StaticResource TextColorBlack}"
-                                           HorizontalOptions="CenterAndExpand" FontSize="15" FontAttributes="Bold" />
-                                <StackLayout>
-                                    <Label Text="16 m³" HorizontalOptions="CenterAndExpand" />
-                                    <Label Text="As of April 2021" FontSize="12"
-                                               HorizontalOptions="CenterAndExpand"
-                                               Margin="0,20,0,20" />
-                                    <Label Text="₱ 802.50" FontSize="30" HorizontalOptions="CenterAndExpand"
-                                               TextColor="{StaticResource PriceColor}"
-                                               FontAttributes="Bold" />
-                                    <Button Text="More Details >>" TextTransform="None" Margin="0,20,20,0"
-                                                CornerRadius="5" Clicked="Btndetails_OnClicked" HorizontalOptions="EndAndExpand" />
-                                </StackLayout>
-                            </StackLayout>
-
-                        </StackLayout>
-                    </Frame>
-                </StackLayout>
-            </Grid>
-        </Grid>
-    </ScrollView>
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
 </ContentPage>

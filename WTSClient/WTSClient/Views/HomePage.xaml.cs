@@ -16,10 +16,5 @@ namespace WTSClient.Views
         {
             InitializeComponent();
         }
-
-        private async void Btndetails_OnClicked(object sender, EventArgs e)
-        {
-            await Navigation.PushModalAsync(new DetailsPage());
-        }
     }
 }
