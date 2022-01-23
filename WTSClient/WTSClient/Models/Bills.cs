@@ -4,7 +4,10 @@ using System.Text;
 
 namespace WTSClient.Models
 {
-    internal class Bills
+    public class Bills
     {
+        public string Fullname { get; set; }
+        public string AccountNumber { get; set; }
+        public string Password { get; set; }
     }
 }

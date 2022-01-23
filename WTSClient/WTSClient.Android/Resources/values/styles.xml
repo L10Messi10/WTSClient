@@ -8,11 +8,11 @@
 
     <!-- Set theme colors from https://aka.ms/material-colors -->
     <!-- colorPrimary is used for the default action bar background -->
-    <item name="colorPrimary">#93329e</item>
+    <item name="colorPrimary">#056DF6</item>
     <!-- colorPrimaryDark is used for the status bar -->
-    <item name="colorPrimaryDark">#440a67</item>
+    <item name="colorPrimaryDark">#056DF6</item>
     <!-- colorAccent is used as the default value for colorControlActivated
          which is used to tint widgets -->
-    <item name="colorAccent">#93329e</item>
+    <item name="colorAccent">#056DF6</item>
   </style>
 </resources>

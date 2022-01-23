@@ -19,7 +19,7 @@
                     TextColor="{StaticResource Primary_Dark}" CornerRadius="8" TextTransform="None"/>
             <Button Grid.Row="2" Text="Sign Up" HorizontalOptions="FillAndExpand" BackgroundColor="{StaticResource Primary_Dark}"
                     BorderWidth="1" CornerRadius="8" BorderColor="{StaticResource TextColor}" TextTransform="None"
-                    TextColor="{StaticResource TextColor}"/>
+                    TextColor="{StaticResource TextColor}" x:Name="btnsignup" Clicked="btnsignup_Clicked"/>
         </Grid>
     </ContentPage.Content>
 </ContentPage>

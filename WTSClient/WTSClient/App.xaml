@@ -7,12 +7,12 @@
     -->
     <Application.Resources>
         <ResourceDictionary>
-            <Color x:Key="Primary_Dark">#440a67</Color>
-            <Color x:Key="Primary_Light">#93329e</Color>
+            <Color x:Key="Primary_Dark">#056DF6</Color>
+            <Color x:Key="Primary_Light">#589DF9</Color>
             <Color x:Key="Primary_Soft_Light">#b4aee8</Color>
             <Color x:Key="TextColor">White</Color>
             <Color x:Key="TextColorBlack">Black</Color>
-            <Color x:Key="FrameBackground">#F4EFCF</Color>
+            <Color x:Key="FrameBackground">White</Color>
             <Color x:Key="PriceColor">#0EB206</Color>
             <Color x:Key="TextSoftColor">#D2D2D2</Color>
             <Color x:Key="Shadow">#AAAAAA</Color>
