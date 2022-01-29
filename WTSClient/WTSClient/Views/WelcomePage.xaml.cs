@@ -19,7 +19,7 @@ namespace WTSClient.Views
 
         private async void btnsignup_Clicked(object sender, EventArgs e)
         {
-            await Navigation.PushModalAsync(new SignUpPage());
+            await Navigation.PushModalAsync(new LoginPage());
         }
     }
 }
