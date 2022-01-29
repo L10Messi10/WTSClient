@@ -20,7 +20,7 @@ namespace WTSClient
             }
             else
             {
-                MainPage = new WelcomePage();
+                MainPage = new AppShell();
             }
         }
 

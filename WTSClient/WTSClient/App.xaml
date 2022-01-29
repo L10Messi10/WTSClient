@@ -14,7 +14,7 @@
             <Color x:Key="TextColorBlack">Black</Color>
             <Color x:Key="FrameBackground">White</Color>
             <Color x:Key="PriceColor">#0EB206</Color>
-            <Color x:Key="TextSoftColor">#D2D2D2</Color>
+            <Color x:Key="TextSoftColor">#AAAAAA</Color>
             <Color x:Key="Shadow">#AAAAAA</Color>
             <Style TargetType="Button">
                 <Setter Property="TextColor" Value="White"></Setter>
@@ -34,6 +34,17 @@
                         </VisualStateGroup>
                     </VisualStateGroupList>
                 </Setter>
+            </Style>
+
+            <Style x:Key="DivisionLine" TargetType="Line">
+                <Setter Property="TranslationY"      Value="{OnPlatform Android='15', iOS='20'}"/>
+                <Setter Property="VerticalOptions"   Value="Center"/>
+                <Setter Property="HorizontalOptions" Value="Center"/>
+                <Setter Property="StrokeDashArray"   Value="1,6"/>
+                <Setter Property="X2"                Value="320"/>
+                <Setter Property="StrokeLineCap"     Value="Square"/>
+                <Setter Property="Stroke"            Value="Silver"/>
+                <Setter Property="StrokeThickness"   Value="2"/>
             </Style>
         </ResourceDictionary>        
     </Application.Resources>
