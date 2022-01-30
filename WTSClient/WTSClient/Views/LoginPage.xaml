@@ -17,7 +17,8 @@
                            PlaceholderColor="{StaticResource TextSoftColor}"
                            HorizontalOptions="FillAndExpand" BackgroundColor="{StaticResource FrameBackground}"/>
                     <Button Grid.Row="2" Text="Login" HorizontalOptions="FillAndExpand" BackgroundColor="{StaticResource Primary_Dark}"
-                            TextColor="{StaticResource TextColor}" CornerRadius="8" TextTransform="None"/>
+                            TextColor="{StaticResource TextColor}" CornerRadius="8" TextTransform="None"
+                            Clicked="Button_Clicked"/>
                     <Button Grid.Row="3" Text="Back" HorizontalOptions="FillAndExpand" BackgroundColor="{StaticResource TextColor}"
                             BorderWidth="1" CornerRadius="8" BorderColor="{StaticResource Primary_Dark}" TextTransform="None"
                             TextColor="{StaticResource Primary_Dark}" x:Name="btnclose" Clicked="btnclose_Clicked"/>

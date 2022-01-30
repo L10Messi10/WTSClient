@@ -9,6 +9,7 @@ namespace WTSClient
     public partial class App : Application
     {
         public static FirebaseClient client = new FirebaseClient("https://dadwasc-default-rtdb.asia-southeast1.firebasedatabase.app/");
+        public static string memberkey;
         public App()
         {
             InitializeComponent();
@@ -20,7 +21,7 @@ namespace WTSClient
             }
             else
             {
-                MainPage = new AppShell();
+                MainPage = new WelcomePage();
             }
         }
 
